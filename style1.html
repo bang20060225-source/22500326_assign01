@@ -10,8 +10,7 @@
         body {
             margin: 0;
             padding: 24px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
+            font: 100% Lucida Sans, Verdana;
         }
 
         header {
@@ -19,6 +18,7 @@
             color: white;
             padding: 15px;
             border-radius: 4px;
+            margin: 4px;
         }
 
         header h1 {
@@ -84,10 +84,6 @@
             font-size: 26px;
         }
 
-        section p {
-            line-height: 1.5;
-        }
-
         section a {
             color: #000000;
         }
@@ -96,7 +92,7 @@
             width: 180px;
             flex-shrink: 0;
             background-color: #32a4e7;
-            padding: 20px;
+            padding: 10px;
             color: white;
             border-radius: 4px;
         }
@@ -116,6 +112,7 @@
             background-color: #f1f1f1;
             text-align: center;
             border-radius: 4px;
+            font-size: 70%;
         }
 
         footer p {
@@ -136,9 +133,9 @@
         <nav>
             <ul>
                 <li><a href="style1.html">Stylesheet 1</a></li>
-                <li><a href="style2.html">Stylesheet 2</a></li>
+                <li><a href="#">Stylesheet 2</a></li>
                 <li><a href="#">Stylesheet 3</a></li>
-                <li><a href="#">Stylesheet 4</a></li>
+                <li><a href="style4.html">Stylesheet 4</a></li>
                 <li><a href="nostyle.html">No Stylesheet</a></li>
             </ul>
         </nav>
@@ -149,30 +146,21 @@
             <p>
                 This is a demonstration of how different stylesheets can change the layout of your HTML page.
                 You can change the layout of this page by selecting different stylesheets in the menu,
-                or by selecting one of the following links:
-            </p>
-
-            <p>
-                <a href="style1.html">Stylesheet 1</a>,
-                <a href="style2.html">Stylesheet 2</a>,
-                <a href="#">Stylesheet 3</a>,
-                <a href="#">Stylesheet 4</a>.
-            </p>
-
+                or by selecting one of the following links:<br>
+                <a href="style1.html">Stylesheet1</a>,
+                <a href="#">Stylesheet2</a>,
+                <a href="#">Stylesheet3</a>,
+                <a href="style4.html">Stylesheet4</a>.
             <h2>No Styles</h2>
-
             <p>
                 This page uses DIV elements to group different sections of the HTML page.
-                Click here to see how the page looks like with no stylesheet:
-            </p>
-
-            <p>
-                <a href="nostyle.html">No Stylesheet</a>
+                Click here to see how the page looks like with no stylesheet:<br>
+                <a href="nostyle.html">No Stylesheet.</a>
             </p>
         </section>
 
         <aside>
-            <h2>Side-Bar</h2>
+            <h3>Side-Bar</h3>
             <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore
