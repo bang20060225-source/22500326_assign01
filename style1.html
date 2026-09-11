@@ -4,84 +4,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome to Hayoung Bang's Homepage</title>
+
     <style>
+        body {
+            margin: 0;
+            padding: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
         header {
             background-color: #04AA6D;
             color: white;
             padding: 15px;
+            border-radius: 4px;
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        section h2 {
+            font-size: 26px;
+        }
+
+        header p {
+            margin: 0;
+        }
+
         main {
-        display: flex;
+            display: flex;
+            gap: 25px;
+            margin-top: 10px;
         }
-        aside{
+
+        nav {
+            width: 200px;
+            flex-shrink: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-bottom: 4px;
+        }
+
+        nav a {
+            display: block;
+            padding: 7px;
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        nav a:hover {
+            background-color: #dddddd;
+        }
+
+        section {
+            flex: 1;
+            padding: 0;
+        }
+
+        section h1 {
+            font-size: 36px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            font-size: 26px;
+        }
+
+        section p {
+            line-height: 1.5;
+        }
+
+        section a {
+            color: #000000;
+        }
+
+        aside {
+            width: 180px;
+            flex-shrink: 0;
             background-color: #32a4e7;
             padding: 20px;
-            width: 180px;
             color: white;
+            border-radius: 4px;
         }
-        nav {
-            margin: 0;
-            padding: 20px;
-            line-height: 26px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            width: 200px;
-            background-color: #f1f1f1;
+
+        aside h2 {
+            margin-top: 10px;
         }
-        section {
-            width: 1;
-            padding: 20px;
+
+        aside p {
+            line-height: 1.5;
         }
-        footer{
+
+        footer {
+            margin-top: 10px;
+            padding: 10px;
             border: 1px solid #d4d4d4;
-            background-color: #f1f1f1;;
+            background-color: #f1f1f1;
+            text-align: center;
+            border-radius: 4px;
+        }
 
-
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 
 <body>
+
     <header>
-        <h1>Welcome to My Homepage</h1>
+        <h1>Welcome to Hayoung Bang's Homepage (22500326)</h1>
         <p>Use the menu to select different Stylesheets</p>
     </header>
 
     <main>
-    <nav>
-        <ul>
-            <li><a href="style1.html">Stylesheet 1</a></li>
-            <li><a href="style2.html">Stylesheet 2</a></li>
-            <li><a href="style3.html">Stylesheet 3</a></li>
-            <li><a href="style4.html">Stylesheet 4</a></li>
-            <li><a href="nostyle.html">No Stylesheet</a></li>
-        </ul>
-    </nav>
 
-    <section>
-        <h1>Same Page Different Stylesheets</h1>
+        <nav>
+            <ul>
+                <li><a href="style1.html">Stylesheet 1</a></li>
+                <li><a href="style2.html">Stylesheet 2</a></li>
+                <li><a href="#">Stylesheet 3</a></li>
+                <li><a href="#">Stylesheet 4</a></li>
+                <li><a href="nostyle.html">No Stylesheet</a></li>
+            </ul>
+        </nav>
 
-        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p>
-        <li>Stylesheet1, Stylesheet2, Stylesheet3, Stylesheet4.</li>
+        <section>
+            <h1>Same Page Different Stylesheets</h1>
 
-        <h2>No Styles</h2>
+            <p>
+                This is a demonstration of how different stylesheets can change the layout of your HTML page.
+                You can change the layout of this page by selecting different stylesheets in the menu,
+                or by selecting one of the following links:
+            </p>
 
-        <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p>
-        <li>No Stylesheet.</li>
-    </section>
-    
+            <p>
+                <a href="style1.html">Stylesheet 1</a>,
+                <a href="style2.html">Stylesheet 2</a>,
+                <a href="#">Stylesheet 3</a>,
+                <a href="#">Stylesheet 4</a>.
+            </p>
+
+            <h2>No Styles</h2>
+
+            <p>
+                This page uses DIV elements to group different sections of the HTML page.
+                Click here to see how the page looks like with no stylesheet:
+            </p>
+
+            <p>
+                <a href="nostyle.html">No Stylesheet</a>
+            </p>
+        </section>
 
         <aside>
             <h2>Side-Bar</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                magna aliquam erat volutpat.
+            </p>
         </aside>
+
     </main>
 
     <footer>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+            sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+            magna aliquam erat volutpat.
+            Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+            molestie consequat, vel illum dolore eu feugiat nulla facilisis et
+            vero eros et accumsan et iusto odio dignissim qui blandit praesent
+            luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
     </footer>
+
 </body>
 
 </html>
